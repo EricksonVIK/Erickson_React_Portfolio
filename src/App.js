@@ -7,7 +7,7 @@ import About from "./components/About/index.about";
 function App() {
   return (
     <div className="App">
-      {/* <Nav></Nav> */}
+      <Nav></Nav>
       <main>
         <About></About>
       </main>
