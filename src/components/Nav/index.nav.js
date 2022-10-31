@@ -1,4 +1,5 @@
 import React from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav() {
   const pages = [
@@ -29,14 +30,14 @@ function Nav() {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about">About me</a>
+            <a data-testid="about" href="#about">About Me</a>
           </li>
           <li>
             <span>Contact</span>
           </li>
           {pages.map((page) => (
             <li className="mx-2" key={page.name}>
-              <span onClick ={pageSelected}> {page.name} </span>
+              <span onClick ={pageSelected}> {capitalizeFirstLetter(page.name)} </span>
             </li>
           ))}
         </ul>
