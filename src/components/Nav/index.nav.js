@@ -10,13 +10,17 @@ function Nav() {
       name: "resume",
       description: "Resume page",
     },
-  ];
+    ];
+    
+    function pageSelected() {
+        console.log(`clicked`)
+    }
 
   return (
     <header>
       <h2>
         <a href="/">
-          <span role="img" aria-label="camera">
+          <span role="img" aria-label="tbd">
             {" "}
           </span>{" "}
           Erickson
@@ -32,7 +36,7 @@ function Nav() {
           </li>
           {pages.map((page) => (
             <li className="mx-2" key={page.name}>
-              <span> {page.name} </span>
+              <span onClick ={pageSelected}> {page.name} </span>
             </li>
           ))}
         </ul>
