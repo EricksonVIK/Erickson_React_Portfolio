@@ -41,6 +41,7 @@ function Project() {
   const [projectCard, setProjectCard] = useState(projects[0]);
   const [hover, setHover] = useState(false);
 
+  //jsx
   return (
     <section>
       <h2>Portfolio</h2>
@@ -60,17 +61,17 @@ function Project() {
           >
             {hover && projectCard.title === project.title ? (
               <>
-                <img
-                  src={`${project.src}`}
-                  alt=""
-                  className="img"
-                ></img>
+                <img src={`${project.src}`} alt="" className="img"></img>
                 <div className="project-details">
                   <span className="flex-row">
-                    <a href={`${project.deploy}`} className="deployed">
+                    <a
+                      href={`${project.deploy}`}
+                      target="blank"
+                      className="deployed"
+                    >
                       {project.title}
                     </a>
-                    <a href={`${project.github}`}>
+                    <a href={`${project.github}`} target="blank">
                       <img
                         className="github-icon"
                         alt="github icon"

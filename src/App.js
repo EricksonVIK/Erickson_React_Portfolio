@@ -1,43 +1,55 @@
-// Root Component for Application
 import React, { useState } from "react";
 import Nav from "./components/Nav/index.nav";
 import About from "./components/About/index.about";
 import Project from "./components/Project/index.project";
+import ContactForm from "./components/Contact/index.contact";
+import Resume from "./components/Resume/index.resume";
+import Footer from "./components/Footer/index.footer";
 
 function App() {
   // page navigation
   const [pages] = useState([
-    {
-      name: "projects",
-      // description: "Project Display",
-    },
-    {
-      name: "resume",
-      // description: "Resume page",
-    },
-    {
-      name: "contact",
-      // description: "Contact Section",
-    },
+    { name: "About Me" },
+    { name: "Projects" },
+    { name: "Contact" },
+    { name: "Resume" },
   ]);
 
-
   // page selection state
-  // const [pageSelected, setPageSelected] = useState(false);
+  const [pageSelected, setPageSelected] = useState(false);
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
-  
+  function renderPage(currentPage) {
+    if(currentPage === "Projects") {
+      return <Project></Project>
+    } else if(currentPage === "Contact") {
+      return <ContactForm></ContactForm>
+    } else if(currentPage === "Resume") {
+      return <Resume></Resume>
+    } else {
+      return <About></About>
+    }
+
+    }
+
+  // jsx
   return (
-    <div className="App">
-      <Nav>
+    <div>
+      <Nav
         pages={pages}
-        setCurrentPage={setCurrentPage}
+        pageSelected={pageSelected}
+        setPageSelected={setPageSelected}
         currentPage={currentPage}
-      </Nav>
+        setCurrentPage={setCurrentPage}
+      ></Nav>
       <main>
-        <About></About>
-        <Project></Project>
+        {pageSelected ? (
+          renderPage(currentPage.name)
+        ) : (
+          <About></About>
+        )}
       </main>
+      <Footer></Footer>
     </div>
   );
 }
