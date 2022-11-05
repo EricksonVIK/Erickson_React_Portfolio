@@ -46,12 +46,13 @@ function ContactForm() {
       <form id="contact-form" onSubmit={handleSubmit}>
         {/* name input */}
         <div>
-          <label htmlFor="name">Name:</label>
+          <label className= "contact-label" htmlFor="name">Name:</label>
           <input
             type="text"
             defaultValue={name}
             onBlur={handleChange}
             name="name"
+            placeholder="Enter Name"
           />
         </div>
         {/* email input */}
@@ -62,6 +63,7 @@ function ContactForm() {
             defaultValue={email}
             onChange={handleChange}
             name="email"
+            placeholder="Enter Email"
           />
         </div>
         {/* message text area */}
