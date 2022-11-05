@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project component matches snapshot 1`] = `
+<DocumentFragment>
+  <section>
+    <h2>
+      Portfolio
+    </h2>
+    <div
+      class="portfolio-section"
+    >
+      <div
+        class="container"
+      >
+        <img
+          alt="Note Taker"
+          class="image"
+          src="noteTaker2.png"
+        />
+      </div>
+      <div
+        class="container"
+      >
+        <img
+          alt="Weather Finder"
+          class="image"
+          src="weatherApp.png"
+        />
+      </div>
+      <div
+        class="container"
+      >
+        <img
+          alt="Text Editor"
+          class="image"
+          src="JATE_screenshot.png"
+        />
+      </div>
+      <div
+        class="container"
+      >
+        <img
+          alt="GifYoda"
+          class="image"
+          src="yodaIM.png"
+        />
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
