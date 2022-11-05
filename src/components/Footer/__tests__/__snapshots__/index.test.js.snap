@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <footer>
+    <a
+      href="https://github.com/EricksonVIK"
+      target="_blank"
+    >
+      <img
+        alt="github icon"
+        class="footer-icon"
+        src="GitHub-icon.png"
+      />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/cserickson/"
+      target="_blank"
+    >
+      <img
+        alt="linkedin icon"
+        class="footer-icon"
+        src="linkedin-icon.png"
+      />
+    </a>
+    <a
+      href="mailto://ericksonvik76@gmail.com"
+    >
+      <img
+        alt="email icon"
+        class="footer-icon"
+        src="email-icon.png"
+      />
+    </a>
+  </footer>
+</DocumentFragment>
+`;
