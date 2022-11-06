@@ -4,6 +4,10 @@ import weatherApp from "../../assets/images/weatherApp.png";
 import textEditor from "../../assets/images/JATE_screenshot.png";
 import YodaIM from "../../assets/images/yodaIM.png";
 import github from "../../assets/images/GitHub-icon.png";
+import TeamProfile from "../../assets/images/Team_Profile_Generator_Screenshot.png";
+import socialApp from "../../assets/images/social_app.png";
+import StockBuddy from "../../assets/images/stockbuddy.png";
+import contactCard from "../../assets/images/contact-card.png";
 
 function Project() {
   // code in project array -- need to add more
@@ -25,17 +29,45 @@ function Project() {
     {
       src: textEditor,
       title: "Text Editor",
-      tools: "Node.js, Express.js, WebPack, IndexedDB",
+      tools: "PWA, WebPack, IndexedDB",
       deploy: "https://serene-anchorage-57681.herokuapp.com/",
       github: "https://github.com/EricksonVIK/text-editor",
     },
     {
       src: YodaIM,
       title: "GifYoda",
-      tools: "Materialize CSS, API's",
+      tools: "Materialize CSS, REST API's",
       deploy: "https://ericksonvik.github.io/YodaIM/",
       github: "https://github.com/EricksonVIK/YodaIM",
     },
+    {
+      src: TeamProfile,
+      title: "Team Profile Generator",
+      tools: "JavaScript, Jest, Inquirer",
+      deploy: "https://drive.google.com/file/d/1yexOgNoF0Dy3-Qm0oL7rWXfJ99mAL8IU/view",
+      github: "https://github.com/EricksonVIK/Team_Profile_Generator"
+    },
+    {
+      src: socialApp,
+      title: "Social App Backend",
+      tools: "MongoDB, Moongoose, Insomnia",
+      deploy: "https://drive.google.com/file/d/1Ap2ACvgVpkWPLYSzHRNggEDcIagVW0nJ/view",
+      github: "https://github.com/EricksonVIK/social-app"
+    },
+    {
+      src: StockBuddy,
+      title: "Stock Buddy",
+      tools: "MySQL, Sequelize, Express, Node, bcrypt",
+      deploy: "https://murmuring-spire-79055.herokuapp.com/",
+      github:"https://github.com/EricksonVIK/Stock_Buddy"
+    },
+    {
+      src: contactCard,
+      title: "Contact Card",
+      tools: "Concurrently, Node, Webpack",
+      deploy: "https://pacific-woodland-23884.herokuapp.com/",
+      github:"https://github.com/EricksonVIK/contact-card/blob/main/package.json"
+    }
   ];
 
   const [projectCard, setProjectCard] = useState(projects[0]);

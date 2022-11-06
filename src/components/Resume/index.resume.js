@@ -16,7 +16,6 @@ function Resume() {
         <li>JQuery</li>
         <li>Responsive design</li>
         <li>React</li>
-        <li>BootStrap, Materialize, Bulma</li>
       </ul>
       <h3>Back-End Proficiencies</h3>
       <ul>

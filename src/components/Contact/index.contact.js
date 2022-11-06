@@ -47,29 +47,34 @@ function ContactForm() {
       <form id="contact-form" onSubmit={handleSubmit}>
         {/* name input */}
         <div>
-          <label className= "contact-label" htmlFor="name">Name:</label>
+          <label className="contact-label" htmlFor="name">Name:</label>
+        </div>
+        <div>
           <input
             type="text"
             defaultValue={name}
             onBlur={handleChange}
             name="name"
-            placeholder="Enter Name"
+            className="name-input"
           />
         </div>
         {/* email input */}
         <div>
-          <label htmlFor="email">Email address:</label>
+          <label htmlFor="email" className="email-label">Email address:</label>
+        </div>
+        <div>
           <input
             type="email"
             defaultValue={email}
             onChange={handleChange}
             name="email"
-            placeholder="Enter Email"
           />
         </div>
         {/* message text area */}
         <div>
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message" className="message-label">Message:</label>
+        </div>
+        <div>
           <textarea
             name="message"
             defaultValue={message}
