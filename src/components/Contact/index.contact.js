@@ -36,7 +36,8 @@ function ContactForm() {
   // form submission
   function handleSubmit(e) {
     e.preventDefault();
-      console.log(formState);
+    console.log(formState);
+    
   }
 
   // render jsx

@@ -1,6 +1,7 @@
 :root {
   --primary-color: black;
   --secondary-color: #e6e6ed;
+  --header-color:rgb(136, 166, 176);
 }
 
 
@@ -45,7 +46,7 @@ a {
   font-weight: bold;
   color: var(--primary-color);
   text-decoration: none;
-  border-bottom: 3px solid var(--secondary-color);
+  border: 3px solid var(--secondary-color);
   padding: 5px 10px;
 }
 
@@ -56,9 +57,10 @@ a:hover {
 /* header */
 header {
   background-size: cover;
+  background-color: var(--header-color);
   background-attachment: fixed;
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   color: var(--secondary-color);
   font-family: AmaticSC, Georgia, 'Times New Roman', Times, serif;
   display: flex;
@@ -68,13 +70,14 @@ header {
 }
 
 header h1 {
-  background-color: var(--secondary-color);
+  background-color: var(--header-color);
   color: var(--primary-color);
   margin-left: 90px;
   font-size: 50px;
   display: inline-block;
   max-height: 70px;
-  margin-top: 20px;
+  margin-top: 30px;
+  text-decoration: none;
 }
 
 header h1 a:hover {
@@ -86,14 +89,14 @@ header h1 a:hover {
 /* navigation */
 nav {
   padding-bottom: 0;
-  margin-top: 80px;
-  background-color: var(--secondary-color);
-  background-color: rgba(33, 33, 66, 0.37);
+  margin-top: 45px;
+  background-color: var(--header-color);
   display: inline-block;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 9999;
+  justify-content:center;
 }
 
 nav ul {
@@ -102,8 +105,9 @@ nav ul {
   padding-right: 25px;
   padding-bottom: 0;
   margin: 0;
-  align-items: center;
- 
+  align-items: center; 
+  background-color: var(--header-color);
+  ;
 }
 nav  li {
   cursor: pointer;
@@ -318,8 +322,8 @@ justify-content: center;
 }
 
 .footer-icon {
-  max-width: 30px;
-  max-height: auto; 
+  max-width: 40px;
+  max-height: 40px; 
 }
 
 .footer-icon:hover {
