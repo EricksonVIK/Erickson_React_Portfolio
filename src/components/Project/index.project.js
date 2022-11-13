@@ -8,10 +8,18 @@ import TeamProfile from "../../assets/images/Team_Profile_Generator_Screenshot.p
 import socialApp from "../../assets/images/social_app.png";
 import StockBuddy from "../../assets/images/stockbuddy.png";
 import contactCard from "../../assets/images/contact-card.png";
+import personalSunrise from "../../assets/images/personalSunrise.png"
 
 function Project() {
   // code in project array -- need to add more
   const projects = [
+    {
+      src: personalSunrise,
+      title: "Rental MVP",
+      tools: "React, MongoDB, Apollo Server",
+      deploy: "http://personal-sunrise-test.herokuapp.com/",
+      github:"https://github.com/EricksonVIK/Erickson_React_Portfolio"
+    },
     {
       src: noteTaker,
       title: "Note Taker",
