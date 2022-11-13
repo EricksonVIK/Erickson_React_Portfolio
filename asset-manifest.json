@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/Erickson_React_Portfolio/static/css/main.19a0f5f4.css",
-    "main.js": "/Erickson_React_Portfolio/static/js/main.b83f8949.js",
+    "main.js": "/Erickson_React_Portfolio/static/js/main.a69975d0.js",
     "static/js/787.e0ac3d28.chunk.js": "/Erickson_React_Portfolio/static/js/787.e0ac3d28.chunk.js",
     "static/media/weatherApp.png": "/Erickson_React_Portfolio/static/media/weatherApp.d77792db38ba7a1db41e.png",
     "static/media/stockbuddy.png": "/Erickson_React_Portfolio/static/media/stockbuddy.ee1b4c72ade51140c15e.png",
+    "static/media/personalSunrise.png": "/Erickson_React_Portfolio/static/media/personalSunrise.79e701e776e7a0a0ac83.png",
     "static/media/yodaIM.png": "/Erickson_React_Portfolio/static/media/yodaIM.c7f35534b256ff433300.png",
     "static/media/social_app.png": "/Erickson_React_Portfolio/static/media/social_app.ca8bd01a7f497ba90d14.png",
     "static/media/Erickson_Resume.pdf": "/Erickson_React_Portfolio/static/media/Erickson_Resume.ce4f09510b10d0d7e7ab.pdf",
@@ -15,11 +16,11 @@
     "static/media/noteTaker2.png": "/Erickson_React_Portfolio/static/media/noteTaker2.9ca921ca3339219bd91a.png",
     "index.html": "/Erickson_React_Portfolio/index.html",
     "main.19a0f5f4.css.map": "/Erickson_React_Portfolio/static/css/main.19a0f5f4.css.map",
-    "main.b83f8949.js.map": "/Erickson_React_Portfolio/static/js/main.b83f8949.js.map",
+    "main.a69975d0.js.map": "/Erickson_React_Portfolio/static/js/main.a69975d0.js.map",
     "787.e0ac3d28.chunk.js.map": "/Erickson_React_Portfolio/static/js/787.e0ac3d28.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19a0f5f4.css",
-    "static/js/main.b83f8949.js"
+    "static/js/main.a69975d0.js"
   ]
 }
